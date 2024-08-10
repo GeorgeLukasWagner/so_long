@@ -6,7 +6,7 @@
 #    By: gwagner <gwagner@student.42wolfsburg.de    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/28 13:59:06 by gwagner           #+#    #+#              #
-#    Updated: 2024/08/10 17:46:48 by gwagner          ###   ########.fr        #
+#    Updated: 2024/08/10 18:17:59 by gwagner          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ $(NAME): $(OBJS)
 	$(MAKE) -sC ./printf
 	$(MAKE) -sC $(MLX_DIR)
 	$(CC) $(CFLAGS) $(MLX_FLAGS) -o $(NAME) $(SRCS) $(MLX) ./printf/libftprintf.a
-	# firefox https://shattereddisk.github.io/rickroll/rickroll.mp4
+	firefox https://shattereddisk.github.io/rickroll/rickroll.mp4
 
 clean:
 	$(MAKE) clean -sC ./printf
